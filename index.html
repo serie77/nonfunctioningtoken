@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Not Found</title>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F9F9F8;
+            color: #000000;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .pixel-text {
+            font-family: 'Silkscreen', cursive;
+            font-size: 42px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            image-rendering: pixelated;
+            -webkit-font-smoothing: none;
+            -webkit-text-stroke: 2px #0066ff;
+            color: white;
+            text-shadow: 
+                2px 2px 0 #ff0000,
+                4px 4px 0 #770000,
+                6px 6px 0 #550000;
+            margin-top: 30px;
+            animation: glitch 2s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); clip-path: inset(0 0 0 0); }
+            40% { transform: translate(-2px, -2px); clip-path: inset(0 0 0 0); }
+            60% { transform: translate(2px, 2px); clip-path: inset(0 0 0 0); }
+            80% { transform: translate(2px, -2px); clip-path: inset(0 0 0 0); }
+            100% { transform: translate(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="tokenfound.jpg" alt="Token Not Found">
+        <div class="pixel-text">404: Token Not Found</div>
+    </div>
+</body>
+</html> 
