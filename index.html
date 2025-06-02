@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Token Not Found</title>
+    <title>nonfunctioningtoken</title>
+    <link rel="icon" type="image/jpg" href="tokenfound.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <style>
         body {
@@ -33,22 +34,21 @@
             text-transform: uppercase;
             image-rendering: pixelated;
             -webkit-font-smoothing: none;
-            -webkit-text-stroke: 2px #0066ff;
+            -webkit-text-stroke: 1px #0066ff;
             color: white;
             text-shadow: 
-                2px 2px 0 #ff0000,
-                4px 4px 0 #770000,
-                6px 6px 0 #550000;
+                1px 1px 0 #ff0000,
+                2px 2px 0 #770000;
             margin-top: 30px;
-            animation: glitch 2s infinite;
+            animation: glitch 3s infinite;
         }
 
         @keyframes glitch {
             0% { transform: translate(0); }
-            20% { transform: translate(-2px, 2px); clip-path: inset(0 0 0 0); }
-            40% { transform: translate(-2px, -2px); clip-path: inset(0 0 0 0); }
-            60% { transform: translate(2px, 2px); clip-path: inset(0 0 0 0); }
-            80% { transform: translate(2px, -2px); clip-path: inset(0 0 0 0); }
+            20% { transform: translate(-1px, 1px); }
+            40% { transform: translate(-1px, -1px); }
+            60% { transform: translate(1px, 1px); }
+            80% { transform: translate(1px, -1px); }
             100% { transform: translate(0); }
         }
     </style>
